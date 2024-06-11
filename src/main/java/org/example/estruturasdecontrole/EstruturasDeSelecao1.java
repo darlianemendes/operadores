@@ -38,5 +38,18 @@ public class EstruturasDeSelecao1 {
         } else {
             System.out.println("Zero");
         }
+
+        //Aninhando
+        int nota = 85;
+        if (nota >= 90) {
+            System.out.println("A nota é A.");
+        } else if (nota >= 80) {
+            System.out.println("A nota é B.");
+        } else if (nota >= 70) {
+            System.out.println("A nota é C.");
+        } else {
+            System.out.println("A nota é D ou F.");
+        }
+
     }
 }
