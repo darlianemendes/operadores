@@ -51,5 +51,36 @@ public class EstruturasDeSelecao1 {
             System.out.println("A nota é D ou F.");
         }
 
+        /*
+        Operadores relacionais e lógicos
+        As condições no if geralmente usam operadores relacionais (==, !=, >, <, >=, <=) e lógicos (&&, ||, !).
+         */
+        boolean estudante = true;
+        int idadeEstudante = 17;
+        if (idadeEstudante < 18 && estudante) {
+            System.out.println("Você é um estudante menor de idade.");
+        }
+
+
+        /*
+        Bloco de Código:
+        Se o bloco if ou else tiver apenas uma linha de código, as chaves {} podem ser omitidas
+        Embora não seja recomendado para que o código em si fique mais legível.
+         */
+        if (idade >= 18)
+            System.out.println("Você é maior de idade.");
+        else
+            System.out.println("Você é menor de idade.");
+
+        /*
+        Escopo de Variáveis:
+        As variáveis declaradas dentro de um bloco if ou else não são acessíveis fora desse bloco.
+         */
+        if (true) {
+            int x = 10;
+            System.out.println(x); // Isso funciona
+        }
+        // System.out.println(x); // Isso causaria um erro de compilação
+
     }
 }
