@@ -4,7 +4,12 @@ public class EstruturasDeSelecao2 {
 
     public static void main(String[] args) {
 
-        //Um único valor, baseado em multiplas condições
+        /*
+        ****** Um único valor, baseado em multiplas condições *********
+        Expressão:
+        A expressão no switch deve ser de um tipo que pode ser avaliado a um valor constante,
+        como int, char, byte, short, String ou um enum.
+         */
         int dia = 3;
         switch (dia) {
             case 1:
@@ -22,7 +27,7 @@ public class EstruturasDeSelecao2 {
         }
 
         //Qual estação estamos
-        String mes = "Janeiro";
+        String mes = "Junho";
         switch (mes) {
             case "Janeiro":
             case "Fevereiro":
@@ -75,6 +80,21 @@ public class EstruturasDeSelecao2 {
                 dias = 0;
                 break;
         }
-        System.out.println("Número de dias em " + mes + ": " + dias);
+        System.out.println("Número de dias em " + mesInformado + ": " + dias);
+
+        /*
+        Case e Break:
+         */
+        int numero = 2;
+        switch (numero) {
+            case 1:
+                System.out.println("Um");
+            case 2:
+                System.out.println("\n******Dois");
+            case 3:
+                System.out.println("Três");
+            default:
+                System.out.println("Número desconhecido");
+        }
     }
 }
