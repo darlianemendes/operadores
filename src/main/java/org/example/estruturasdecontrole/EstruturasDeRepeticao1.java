@@ -27,5 +27,23 @@ public class EstruturasDeRepeticao1 {
             soma += i;
         }
         System.out.println("Soma: " + soma);
+
+
+        /*
+        Interrupção do Laço:
+        O uso das palavras-chave break e continue pode modificar o comportamento do laço.
+        -> break interrompe o laço imediatamente.
+        -> continue pula a iteração atual e avança para a próxima iteração
+         */
+        for (int i = 1; i <= 10; i++) {
+            if (i == 5) {
+                break; // Sai do laço quando i é 5
+            }
+            if (i % 2 == 0) {
+                continue; // Pula os números pares
+            }
+            System.out.println("i é igual a: " + i);
+        }
+
     }
 }
